@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>父级div定义 overflow:hidden</title>
+</head>
+<body>
+  <p style="background: lightpink; text-align: center">父级div定义 overflow:hidden</p>
+  <p>原理：必须定义width或zoom:1，同时不能定义height，使用overflow:hidden时，浏览器会自动检查浮动区域的高度</p>
+  <p>优点：简单、代码少、浏览器支持好</p>
+
+  <p style="background: lightgreen; text-align: center">浮动</p>
+  <div style="background: lightpink; width: 800px;">
+    <div style="background: red; width: 500px; height: 100px">div1</div>
+    <div style="background: orange; width: 300px; height: 150px; float: left">div2</div>
+    <div style="background: yellow; width: 600px; height: 100px">div3</div>
+  </div>
+  <hr />
+  <p style="background: lightseagreen; text-align: center; margin-top: 100px">清除浮动</p>
+  <div style="background: lightpink; width: 800px; overflow: hidden;">
+    <div style="background: red; width: 500px; height: 100px">div1</div>
+    <div style="background: orange; width: 300px; height: 150px; float: left">div2</div>
+    <div style="background: yellow; width: 600px; height: 100px">div3</div>
+  </div>
+</body>
+</html>

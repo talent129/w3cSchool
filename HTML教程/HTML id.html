@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML id</title>
+  <style>
+    #myHeader {
+        background: lightpink;
+        color: blue;
+        font-size: 16px;
+        padding: 20px;
+        text-align: center;
+    }
+  </style>
+  <script>
+    function displayResult() {
+      document.getElementById('myHeader').innerHTML = "Have a nice day.";
+    }
+  </script>
+</head>
+<body>
+  <p>HTML id 属性用于 为HTML 元素指定唯一的 id</p>
+  <p>一个 HTML文档中不能存在多个有相同 id 的元素</p>
+  <p>id 属性指定 HTML 元素的唯一 ID。 id 属性的值在 HTML 文档中必须是唯一的。<br />
+    id 属性用于指向样式表中的特定样式声明。JavaScript 也可使用它来访问和操作拥有特定 ID 的元素</p>
+  <strong>id 的语法是：写一个井号 (#)，后跟一个 id 名称。然后，在花括号 {} 中定义 CSS 属性</strong>
+  <h1 id="myHeader">My Header</h1>
+  <strong>
+    注释：id 名称对大小写敏感！ <br />
+    注释：id 必须包含至少一个字符，且不能包含空白字符（空格、制表符等）。
+  </strong>
+  <strong>Class 与 ID 的差异</strong>
+  <p>同一个类名可以由多个 HTML 元素使用，而一个 id 名称只能由页面中的一个 HTML 元素使用</p>
+  <strong>通过 ID 和链接实现 HTML 书签</strong>
+  <p>HTML 书签用于让读者跳转至网页的特定部分。<br />
+    如果页面很长，那么书签可能很有用。<br />
+    要使用书签，您必须首先创建它，然后为它添加链接。<br />
+    然后，当单击链接时，页面将滚动到带有书签的位置。</p>
+  <h2 id="C4">第四章</h2>
+  <a href="#C4">跳转到第四章</a>
+  <strong>在 JavaScript 中使用 id 属性</strong>
+  <p>JavaScript 也可以使用 id 属性为特定元素执行某些任务。<br />
+    JavaScript 可以使用 getElementById() 方法访问拥有特定 id 的元素</p>
+  <input type="button" value="点击修改" onclick="displayResult()" />
+  <button type="button" onclick="displayResult()">点我</button>
+</body>
+</html>

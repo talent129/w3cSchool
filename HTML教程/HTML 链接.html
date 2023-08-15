@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML 链接</title>
+</head>
+<body>
+  <p>HTML 使用超级链接与网络上的另一个文档相连</p>
+  <p>HTML使用标签 &lt;a&gt;来设置超文本链接，是可以从一个页面指向另一个目的端的链接。 <br />
+    超链接可以是一个字，一个词，或者一组词，也可以是一幅图像，您可以点击这些内容来跳转到新的文档或者当前文档中的某个部分。</p>
+  <p>在标签 &lt;a&gt; 中使用了 href 属性来描述链接的地址</p>
+  <strong>默认情况下，链接将以以下形式出现在<br /><a href="https://www.baidu.com">浏览器中:</a></strong>
+  <ul>
+    <li>一个未访问过的链接显示为蓝色字体并带有下划线</li>
+    <li>访问过的链接显示为紫色并带上下划线</li>
+    <li>点击链接时，链接显示为红色并带上下划线</li>
+  </ul>
+  <strong>HTML 空链接</strong>
+  <p>指指向链接后，鼠标变成手形，但单击后仍停留在当前页面</p>
+  <a href="#">这是空链接</a>
+  <strong>HTML链接-target属性</strong>
+  <p>使用 Target 属性，你可以定义被链接的文档在何处显示（在新的窗口打开，还是在原有的窗口中打开）</p>
+  <p>默认的被链接文档会在原有的窗口中打开的。如果将 target 属性设置为 "_blank" 则文档就会在新窗口打开。</p>
+  <a href="https://www.baidu.com" target="_blank">在新窗口打开百度</a>
+  <strong>基本的注意事项 - 有用的提示</strong>
+  <b>Note: 请始终将正斜杠添加到子文件夹。假如这样书写链接：href="//www.w3cschool.cn/html"，就会向服务器产生两次 HTTP 请求。这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求</b>
+
+  <strong>HTML 链接 - id 属性</strong>
+  <p>id 属性可用于在一个 HTML 文档中创建书签标记。</p>
+  <p>书签是不以任何特殊的方式显示，在 HTML 文档中是不显示的，所以对于读者来说是隐藏的</p>
+  <a href="#tips">链接到tips部分</a>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <p id="tips">tips部分</p>
+</body>
+</html>

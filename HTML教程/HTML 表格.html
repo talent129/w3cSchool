@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML 表格</title>
+</head>
+<body>
+  <p>表格由&lt;table&gt;标签来定义。每个表格均有若干行（由&lt;tr&gt;标签定义），每行被分割为若干单元格（由&lt;td&gt;标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等</p>
+  <strong>HTML 表格的基本结构：</strong>
+  <ul>
+    <li>&lt;table&gt;…&lt;/table&gt;：定义表格</li>
+    <li>&lt;th&gt;…&lt;/th&gt;：定义表格的标题栏（文字加粗）</li>
+    <li>&lt;tr&gt;…&lt;/tr&gt;：定义表格的行</li>
+    <li>&lt;td&gt;…&lt;/td&gt;：定义表格的列</li>
+  </ul>
+  <table style="border: 1px solid red;">
+    <caption>这是标题</caption>
+    <tr>
+      <th>header1</th>
+      <th>header2</th>
+    </tr>
+    <tr>
+      <td>row1,cell1</td>
+      <td>row1,cell2</td>
+    </tr>
+    <tr>
+      <td>row2,cell1</td>
+      <td>row2,cell2</td>
+    </tr>
+  </table>
+  <strong>合并单元格</strong>
+  <table border="2">
+    <caption>合并单元格</caption>
+    <tr>
+      <th>Column1</th>
+      <th>Column2</th>
+      <th>Column3</th>
+    </tr>
+    <tr>
+      <td rowspan="2">row1,cell1</td>
+      <td>row1,cell2</td>
+      <td>row1,cell3</td>
+    </tr>
+    <tr>
+      <td>row2,cell2</td>
+      <td>row2,cell3</td>
+    </tr>
+    <tr>
+      <td colspan="3">row3,cell1</td>
+    </tr>
+  </table>
+  <strong>表格可以分为三个部分 - 头部，主体和页脚</strong>
+  <p>头部，主体和页脚的对应的三个标签是:</p>
+  <ul>
+    <li>&lt;thead&gt; - 创建单独的表头。</li>
+    <li>&lt;tbody&gt; - 表示表格的主体。</li>
+    <li>&lt;tfoot&gt; - 创建一个单独的表页脚</li>
+  </ul>
+  <strong>
+    表可以包含多个&lt;tbody&gt;元素以指示不同的页面。<br />
+    但值得注意的是&lt;thead&gt;和&lt;tfoot&gt;标签应出现在&lt;tbody&gt;之前
+  </strong>
+  <table border="1">
+    <thead>
+    <tr>
+      <td colspan="4">This is the header of the table</td>
+    </tr>
+    </thead>
+    <tfoot>
+    <td colspan="4">This is the foot of the table</td>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+        <td>Cell 4</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

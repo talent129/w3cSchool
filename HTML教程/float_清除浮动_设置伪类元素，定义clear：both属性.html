@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>设置伪类元素，定义clear：both属性</title>
+  <style>
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+        zoom: 1;
+    }
+  </style>
+</head>
+<body>
+  <p style="background: lightseagreen; text-align: center">设置伪类元素，定义clear：both属性</p>
+  <p>原理： 这个方式的原理和额外标签法的方式异曲同工，只是利用伪类向浮动元素的父盒子的后面添加了一个块级元素</p>
+  <p>优点：代码少、兼容性好、不会有额外的标签、简单</p>
+  <p>缺点：为了兼容低版本的浏览器，需要加上zoom: 1这个属性</p>
+  <p style="background: lightgreen; text-align: center">浮动</p>
+  <div style="background: lightpink; width: 800px;">
+    <div style="background: red; width: 500px; height: 100px">div1</div>
+    <div style="background: orange; width: 300px; height: 150px; float: left">div2</div>
+    <div style="background: yellow; width: 600px; height: 100px">div3</div>
+  </div>
+  <hr />
+  <p style="background: lightseagreen; text-align: center; margin-top: 100px">清除浮动</p>
+  <div style="background: lightpink; width: 800px" class="clearfix">
+    <div style="background: red; width: 500px; height: 100px">div1</div>
+    <div style="background: orange; width: 300px; height: 150px; float: left">div2</div>
+    <div style="background: yellow; width: 600px; height: 100px">div3</div>
+  </div>
+</body>
+</html>

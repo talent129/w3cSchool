@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML 引用</title>
+</head>
+<body>
+  <p>HTML &lt;q&gt; 元素定义短的引用</p>
+  <p>浏览器通常会为 &lt;q&gt; 元素包围引号。</p>
+  <p>HTML<q>引用</q></p>
+  <strong>用于长引用的 HTML &lt;blockquote&gt;</strong>
+  <p>HTML &lt;blockquote&gt; 元素定义被引用的节。<br />
+    浏览器通常会对 &lt;blockquote&gt; 元素进行缩进处理。</p>
+  <p>长的引用: <blockquote>长引用</blockquote></p>
+  <strong>用于缩略词的 HTML &lt;abbr&gt;</strong>
+  <p>HTML &lt;abbr&gt; 元素定义缩写或首字母缩略语。<br />
+    对缩写进行标记能够为浏览器、翻译系统以及搜索引擎提供有用的信息。</p>
+  <p><abbr title="Hyper Text Markup Language">HTML</abbr></p>
+  <strong>用于定义的 HTML &lt;dfn&gt;</strong>
+  <p>HTML &lt;dfn&gt; 元素定义项目或缩写的定义</p>
+  <p>1. 如果设置了 &lt;dfn&gt; 元素的 title 属性，则定义项目</p>
+  <p><dfn title="World Health Organization">WHO</dfn> 成立于 1948 年。</p>
+  <p>2. 如果 &lt;dfn&gt; 元素包含具有标题的 &lt;abbr&gt; 元素，则 title 定义项目</p>
+  <p><dfn><abbr title="World Health Organization">WHO</abbr></dfn> 成立于 1948 年。</p>
+  <p>3. 否则，&lt;dfn&gt; 文本内容即是项目，并且父元素包含定义</p>
+  <p><dfn>WHO</dfn> World Health Organization 成立于 1948 年。</p>
+  <strong>用于联系信息的 HTML &lt;address&gt;</strong>
+  <p>HTML &lt;address&gt; 元素定义文档或文章的联系信息（作者/拥有者）。 <br />此元素通常以斜体显示</p>
+  <address>
+    Written by Donald Duck.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+  </address>
+  <strong>用于著作标题的 HTML &lt;cite&gt;</strong>
+  <p>HTML &lt;cite&gt; 元素定义著作的标题。 <br />浏览器通常会以斜体显示 &lt;cite&gt; 元素</p>
+  <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+  <strong>用于双向重写的 HTML &lt;bdo&gt;</strong>
+  <p>HTML &lt;bdo&gt; 元素定义双流向覆盖（bi-directional override）。<br />&lt;bdo&gt; 元素用于覆盖当前文本方向</p>
+  <bdo dir="rtl">This text will be written from right to left</bdo>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>父级div定义 height</title>
+</head>
+<body>
+  <p style="font-size: 18px; text-align: center; background: lightgreen">父级div定义 height</p>
+  <p>原理：父级div手动定义height，就解决了父级div无法自动获取到高度的问题</p>
+  <p>优点：简单、代码少、容易掌握</p>
+  <p>缺点：只适合高度固定的布局，要给出精确的高度，如果高度和父级div不一样时，会产生问题</p>
+  <hr />
+  <p style="color: blue">标准流，父盒子不设置高度，由其三个div子元素撑起</p>
+  <div style="background: lightpink; width: 800px;">
+    <div style="background: red; width: 500px; height: 100px">div1</div>
+    <div style="background: orange; width: 300px; height: 150px">div2</div>
+    <div style="background: yellow; width: 600px; height: 100px">div3</div>
+  </div>
+  <hr />
+
+  <p style="color: blue">div2 float: left浮动 => div2脱离标准流，div3向上移动 div2浮动在div3之上，父盒子总高度= H(div1)+H(div3)</p>
+  <div style="background: lightpink; width: 800px;">
+    <div style="background: red; width: 500px; height: 100px">div1</div>
+    <div style="background: orange; width: 300px; height: 150px; float: left">div2</div>
+    <div style="background: yellow; width: 600px; height: 100px">div3</div>
+  </div>
+  <hr />
+  <p style="margin-top: 100px">通过定义父盒子height 解决</p>
+  <div style="background: lightpink; width: 800px; height: 250px">
+    <div style="background: red; width: 500px; height: 100px">div1</div>
+    <div style="background: orange; width: 300px; height: 150px; float: left">div2</div>
+    <div style="background: yellow; width: 600px; height: 100px">div3</div>
+  </div>
+</body>
+</html>

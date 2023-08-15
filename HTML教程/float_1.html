@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>浮动float</title>
+</head>
+<body>
+  <strong>标准流</strong>
+  <p>div是块级元素，在页面中独占一行，自上而下排列</p>
+  <strong>浮动可以理解为让某个div元素脱离标准流，漂浮在标准流之上，和标准流不是一个层次</strong>
+  <hr />
+  <p style="margin: 0 auto; background: lightgreen; text-align: center">标准流</p>
+  <div id="container" style="background: lightpink; width: 800px; height: 500px; margin: 0 auto">
+    <div id="div1" style="background: red; width: 400px; height: 80px; text-align: center; line-height: 80px">
+      div1 width400 height80
+    </div>
+    <div id="div2" style="background: orange; width: 700px; height: 120px; text-align: center; line-height: 120px">
+      div2 width700 height120
+    </div>
+    <div id="div3" style="background: green; width: 600px; height: 200px; text-align: center; line-height: 200px">
+      div3 width600 height200
+    </div>
+    <div id="div4" style="background: blue; width: 500px; height: 80px; text-align: center; line-height: 80px">
+      div4 width500 height80
+    </div>
+  </div>
+  <hr />
+  <p style="margin: 0 auto; background: lightgreen; text-align: center">div2浮动</p>
+  <div id="container1" style="background: lightpink; width: 800px; height: 500px; margin: 0 auto">
+    <div id="div11" style="background: red; width: 400px; height: 80px; text-align: center; line-height: 80px">
+      div1 width400 height80
+    </div>
+    <div id="div22" style="float: left; background: orange; width: 700px; height: 120px; text-align: center; line-height: 120px">
+      div2 width700 height120
+    </div>
+    <div id="div33" style="background: green; width: 600px; height: 200px; text-align: center; line-height: 200px">
+      div3 width600 height200
+    </div>
+    <div id="div44" style="background: blue; width: 500px; height: 80px; text-align: center; line-height: 80px">
+      div4 width500 height80
+    </div>
+  </div>
+  <strong>div2浮动之后，div3向上移动，占据div2的位置，并且div2浮动在div3之上</strong>
+  <hr />
+  <hr />
+  <p style="margin: 0 auto; background: lightgreen; text-align: center">div2/div3浮动</p>
+  <div id="container2" style="background: lightpink; width: 800px; height: 500px; margin: 0 auto">
+    <div id="div111" style="background: red; width: 400px; height: 80px; text-align: center; line-height: 80px">
+      div1 width400 height80
+    </div>
+    <div id="div222" style="float: left; background: orange; width: 400px; height: 120px; text-align: center; line-height: 120px">
+      div2 width400 height120
+    </div>
+    <div id="div333" style="float: left; background: green; width: 300px; height: 200px; text-align: center; line-height: 200px">
+      div3 width300 height200
+    </div>
+    <div id="div444" style="background: blue; width: 720px; height: 300px; text-align: center; line-height: 80px">
+      div4 width720 height300
+    </div>
+  </div>
+  <p>假如某个div元素A是浮动的，如果A元素上一个元素也是浮动的，那么A元素会跟随在上一个元素的后边(如果一行放不下这两个元素，那么A元素会被挤到下一行)；如果A元素上一个元素是标准流中的元素，那么A的相对垂直位置不会改变，也就是说A的顶部总是和上一个元素的底部对齐。</p>
+  <hr />
+  <strong>元素浮动之前，也就是在标准流中，是竖向排列的，而浮动之后可以理解为横向排列。</strong>
+  <p style="color: purple; font-size: 20px">对于CSS的清除浮动(clear)，一定要牢记：这个规则只能影响使用清除的元素本身，不能影响其他元素。</p>
+</body>
+</html>

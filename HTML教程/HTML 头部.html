@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML 头部</title>
+</head>
+<body>
+  <p>HTML 头部元素包含关于文档的概要信息，也被称为元信息（meta-information）。</p>
+  <p>
+    &lt;head&gt; 元素包含了所有的头部标签元素。在 &lt;head&gt;元素中你可以插入脚本（scripts）, 样式文件（CSS），及各种 meta 信息。<br />
+      可以添加在头部区域的元素标签为: &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, &lt;noscript&gt; 和 &lt;base&gt;
+  </p>
+  <strong>HTML &lt;title&gt; 元素</strong>
+  <p>
+    &lt;title&gt; 标签定义了不同文档的标题。<br />
+      title 在 HTML/XHTML 文档中是必须的。<br />
+  </p>
+  <strong>title 元素:</strong>
+  <ul>
+    <li>
+      定义了浏览器工具栏的标题
+    </li>
+    <li>
+      当网页添加到收藏夹时，显示在收藏夹中的标题
+    </li>
+    <li>显示在搜索引擎结果页面的标题</li>
+  </ul>
+  <strong>HTML &lt;base&gt; 元素</strong>
+  <p>&lt;base&gt; 标签描述了基础的链接地址/链接目标，该标签作为HTML文档中所有的链接 规定默认地址或默认目标（target）：</p>
+  <p>
+    &lt;head&gt;<br />
+      &lt;base href="//www.w3cschool.cn/images/" target="_blank"&gt;<br />
+    &lt;/head&gt;
+  </p>
+  <p>在 HTML 中，&lt;base&gt; 标签没有绑定标签；在 XHTML 中，&lt;base&gt; 标签必须被正确关闭。</p>
+  <strong>HTML &lt;link&gt; 元素</strong>
+  <p>&lt;link&gt; 标签确定了文档与外部资源之间的关系。<br />
+    &lt;link&gt; 标签通常用于链接到样式表：</p>
+  <p>
+    &lt;head&gt;<br />
+      &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;<br />
+    &lt;/head&gt;
+  </p>
+  <strong>HTML &lt;style&gt; 元素</strong>
+  <p>
+    &lt;style&gt; 标记定义了HTML文档的样式文件引用地址。<br />
+    在&lt;style&gt;元素中你需要指定格式的文件来自流染HTML文件
+  </p>
+  <strong>HTML &lt;meta&gt; 元素</strong>
+  <p>元数据（元数据）是关于数据的信息</p>
+  <p>
+    &lt;meta&gt; 标签提供关于HTML文档的元数据。元数据不会显示在页面上，但对于机器是可读的。<br />
+    典型的情况是，meta元素被用于规定页面的描述、关键词、文档的作者、最后修改时间以及其他元数据。<br />
+    &lt;meta&gt; 标签开始位置于 head 元素中
+  </p>
+  <p>元数据可用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他Web服务</p>
+  <strong>针对搜索引擎的关键词</strong>
+  <p>一些搜索引擎使用元素的名称和内容属性来搜索您的页面。</p>
+  <p>
+    &lt;meta name="description" content="Free Web tutorials on HTML, CSS, XML" /&gt;
+  </p>
+  <p>name 和 content 属性的作用是描述页面的内容</p>
+  <strong>HTML &lt;script&gt; 元素</strong>
+  <p>
+    &lt;script&gt; 标签用于加载脚本文件，如：JavaScript。
+  </p>
+</body>
+</html>

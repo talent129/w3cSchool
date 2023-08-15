@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>结尾处加空div标签 clear:both</title>
+</head>
+<body>
+  <p style="background: lightseagreen; text-align: center">结尾处加空div标签 clear:both</p>
+  <p>原理：添加一个空div，利用css提高的clear:both清除浮动，让父级div能自动获取到高度</p>
+  <p>优点：简单、代码少、浏览器支持好、不容易出现怪问题</p>
+  <p>缺点：不少初学者不理解原理；如果页面浮动布局多，就要增加很多空div，让人感觉很不好</p>
+  <p style="background: lightgreen; text-align: center">浮动</p>
+  <div style="background: lightpink; width: 800px;">
+    <div style="background: red; width: 500px; height: 100px">div1</div>
+    <div style="background: orange; width: 300px; height: 150px; float: left">div2</div>
+    <div style="background: yellow; width: 600px; height: 100px">div3</div>
+  </div>
+  <hr />
+  <p style="background: lightseagreen; text-align: center; margin-top: 100px">清除浮动</p>
+  <div style="background: lightpink; width: 800px">
+    <div style="background: red; width: 500px; height: 100px">div1</div>
+    <div style="background: orange; width: 300px; height: 150px; float: left">div2</div>
+    <div style="background: yellow; width: 600px; height: 100px">div3</div>
+    <div style="clear: both"></div>
+  </div>
+</body>
+</html>
