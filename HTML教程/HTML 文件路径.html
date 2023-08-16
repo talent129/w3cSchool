@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML 文件路径</title>
+</head>
+<body>
+  <table style="background: lightseagreen;">
+    <th>路径</th>
+    <th>描述</th>
+    <tr>
+      <td>&lt;img src="logo.jpg"&gt;</td>
+      <td>logo.jpg 位于与当前网页相同的文件夹</td>
+    </tr>
+    <tr>
+      <td>&lt;img src="logo/logo.jpg"&gt;</td>
+      <td>logo.jpg 位于当前文件夹的 logo文件夹中</td>
+    </tr>
+    <tr>
+      <td>&lt;img src="/logo/logo.jpg"&gt;</td>
+      <td>logo.jpg 位于当前站点根目录的 logo 文件夹中</td>
+    </tr>
+    <tr>
+      <td>&lt;img src="../logo.jpg"&gt;</td>
+      <td>logo.jpg 位于当前文件夹的上一级文件夹中</td>
+    </tr>
+  </table>
+  <p>文件路径描述了网站文件夹结构中某个文件的位置</p>
+  <p>文件路径会在链接外部文件时被用到</p>
+  <ul>
+    <li>网页</li>
+    <li>图像</li>
+    <li>样式表</li>
+    <li>JavaScript</li>
+  </ul>
+  <p style="font-weight: bold">绝对文件路径</p>
+  <p>绝对文件路径是指向一个因特网文件的完整 URL</p>
+  <p style="font-weight: bold">相对路径</p>
+  <p>相对路径指向了相对于当前页面的文件。</p>
+  <p style="font-weight: bold">使用相对路径是个好习惯</p>
+</body>
+</html>
