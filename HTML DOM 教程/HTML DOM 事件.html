@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML DOM 事件</title>
+  <script>
+    function changeText(e) {
+      e.innerHTML = "Hello World";
+    }
+    function displayDate() {
+      document.getElementById("date").innerHTML = Date();
+    }
+    function checkCookies() {
+      if (navigator.cookieEnabled) {
+        alert("cookies are enabled")
+      } else {
+        alert("cookie is not enabled")
+      }
+    }
+    function toUpper() {
+      var x = document.getElementById("fname")
+      x.value = x.value.toUpperCase()
+    }
+    function onMouseover(obj) {
+      obj.innerHTML = "Thank you"
+    }
+    function onMouseout(obj) {
+      obj.innerHTML = "Mouse over me"
+    }
+    function mDown(obj) {
+      obj.style.background = "#55a3f2"
+    }
+    function mUp(obj) {
+      obj.style.background = "#FF0000"
+    }
+  </script>
+</head>
+<body onload="checkCookies()">
+  <p>HTML DOM 允许 JavaScript 对 HTML 事件作出反应</p>
+  <p style="font-weight: bold">HTML 事件的例子</p>
+  <ul>
+    <li>当用户点击鼠标时</li>
+    <li>当网页已加载时</li>
+    <li>当图片已加载时</li>
+    <li>当鼠标移动到元素上时</li>
+    <li>当输入字段被改变时</li>
+    <li>当 HTML 表单被提交时</li>
+    <li>当用户触发按键时</li>
+  </ul>
+  <h1 onclick="this.innerHTML='Hello'">Click me</h1>
+  <button type="button" onclick="changeText(this)">点击改变</button>
+  <button type="button" id="date">点击显示时间</button>
+  <script>
+    document.getElementById("date").onclick = function () {
+      displayDate();
+    }
+  </script>
+  <p style="font-weight: bold">onload 和 onunload 事件</p>
+  <p>当用户进入或离开页面时，会触发 onload 和 onunload 事件。<br />
+    onload 事件可用于检查访客的浏览器类型和版本，以便基于这些信息来加载不同版本的网页。<br />
+    onload 和 onunload 事件可用于处理 cookies</p>
+  <p style="font-weight: bold">onchange 事件</p>
+  <p>onchange 事件常用于输入字段的验证。</p>
+  <input type="text" id="fname" onchange="toUpper()" />
+  <p style="font-weight: bold">onmouseover 和 onmouseout 事件</p>
+  <p>onmouseover 和 onmouseout 事件可用于在鼠标指针移动到或离开元素时触发函数。</p>
+  <div style="width: 300px; height: 200px; background: lightcoral" onmouseover="onMouseover(this)" onmouseout="onMouseout(this)">KKK</div>
+  <p style="font-weight: bold">onmousedown、onmouseup 以及 onclick 事件</p>
+  <p>onmousedown、onmouseup 以及 onclick 事件是鼠标点击的全部过程。<br />
+    首先当某个鼠标按钮被点击时，触发 onmousedown 事件，<br />
+    然后，当鼠标按钮被松开时，会触发 onmouseup 事件，<br />
+    最后，当鼠标点击完成时，触发 onclick 事件</p>
+  <div style="background: #00FFFF; width: 300px; height: 200px" onmousedown="mDown(this)" onmouseup="mUp(this)"></div>
+</body>
+</html>

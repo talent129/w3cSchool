@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+  <p>&lt;canvas&gt;元素是HTML5中的新元素，通过使用该元素，你可以在网页中绘制所需的图形</p>
+  <p>标签定义图形，比如图表和其他图像，您必须使用脚本来绘制图形</p>
+  <p>标签只是图形容器，您必须使用脚本来绘制图形</p>
+  <p>一个画布在网页中是一个矩形框，通过 &lt;canvas&gt; 元素来绘制.<br />
+    注意: 默认情况下 &lt;canvas&gt; 元素没有边框和内容</p>
+  <p>注意: 标签通常需要指定一个id属性 (脚本中经常引用), width 和 height 属性定义的画布的大小。<br />
+    提示: 你可以在HTML页面中使用多个 &lt;canvas&gt; 元素.</p>
+  <canvas id="myCanvas" width="500" height="300" style="border: 1px solid blue">
+  </canvas>
+  <p>canvas 元素本身是没有绘图能力的。所有的绘制工作必须在 JavaScript 内部完成</p>
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0,150, 75);
+  </script>
+  <p style="font-weight: bold">Canvas - 路径</p>
+  <p>在Canvas上画线，我们将使用以下两种方法</p>
+  <ul>
+    <li>moveTo(x,y) 定义线条开始坐标</li>
+    <li>lineTo(x,y) 定义线条结束坐标</li>
+  </ul>
+  <script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.moveTo(300,0);
+    ctx.lineTo(400,100);
+    ctx.stroke();
+  </script>
+  <p style="font-weight: bold">在canvas中绘制圆形, 我们将使用以下方法</p>
+  <p>arc(x,y,r,start,stop)</p>
+  <script>
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(100,150,40,0,2*Math.PI);
+    ctx.stroke();
+  </script>
+</body>
+</html>

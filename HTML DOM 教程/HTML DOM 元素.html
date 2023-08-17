@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML DOM 元素</title>
+  <script>
+    function deleteChild() {
+      var div = document.getElementById("div1");
+      var p1 = document.getElementById("p1");
+      div.removeChild(p1);
+    }
+    function parentNodeDeleteChild() {
+      var child = document.getElementById("p1");
+      child.parentNode.removeChild(child);
+    }
+    function replaceP1() {
+      var para = document.createElement("p");
+      var node = document.createTextNode("KKK");
+      para.appendChild(node);
+
+      var p1 = document.getElementById("p1");
+
+      var div = document.getElementById("div1");
+      div.replaceChild(para, p1);
+    }
+  </script>
+</head>
+<body>
+  <p style="font-weight: bold">创建新的 HTML 元素 - appendChild()</p>
+  <p>如果您需要向 HTML DOM 添加新元素，您首先必须创建该元素，然后把它追加到已有的元素上</p>
+  <div id="div1">
+    <p id="p1">This is a paragraph</p>
+    <p id="p2">This is another paragraph</p>
+  </div>
+  <script>
+    var para = document.createElement("p");
+    var node = document.createTextNode("Hello World");
+    para.appendChild(node);
+
+    var element = document.getElementById("div1");
+    element.appendChild(para);
+  </script>
+  <p style="font-weight: bold">创建新的 HTML 元素 - insertBefore()</p>
+  <script>
+    var para = document.createElement("p");
+    var node = document.createTextNode("Hi");
+    para.appendChild(node);
+
+    var element = document.getElementById("div1");
+    var child = document.getElementById("p1");
+    element.insertBefore(para, child);
+  </script>
+  <p style="font-weight: bold">删除已有的 HTML 元素</p>
+  <p>如果您需要删除 HTML 元素，您必须清楚该元素的父元素</p>
+  <button type="button" onclick="deleteChild()">点我删除p1</button>
+  <p style="font-weight: bold; font-size: 15px">能否在不引用父元素的情况下删除某个元素？<br />
+    很抱歉。DOM 需要了解您需要删除的元素，以及它的父元素<br />
+    这里提供一个常用的解决方法，找到您需要删除的子元素，<br />
+    然后使用 parentNode 属性来查找其父元素：
+  </p>
+  <button type="button" onclick="parentNodeDeleteChild()">使用 parentNode 属性来查找其父元素</button>
+  <p style="font-weight: bold">替换 HTML 元素</p>
+  <p>如果您需要替换 HTML DOM 中的元素，请使用 replaceChild() 方法</p>
+  <button type="button" onclick="replaceP1()">replace child</button>
+</body>
+</html>
