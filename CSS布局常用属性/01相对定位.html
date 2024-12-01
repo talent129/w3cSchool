@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>相对定位</title>
+  <style>
+    .one, .two, .three {
+        width: 100px;
+        height: 100px;
+    }
+    .one {
+        background-color: blue;
+    }
+    .two {
+        background-color: tomato;
+        position: relative;
+        left: 100px;
+        top: 100px;
+    }
+    .three {
+        background-color: purple;
+    }
+    .other {
+        width: 200px;
+        height: 200px;
+        background: green;
+        position: relative;
+        left: 200px;
+    }
+    .other .son {
+        background: red;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 100px;
+        top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    相对定位: <br />定位参考点就是当前元素所在位置 <br />
+    定位元素会占据原有位置
+  </p>
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <hr />
+  <div class="other">
+    <div class="son"></div>
+  </div>
+</body>
+</html>

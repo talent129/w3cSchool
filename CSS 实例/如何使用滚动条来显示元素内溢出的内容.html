@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>如何使用滚动条来显示元素内溢出的内容</title>
+  <style>
+    div.scroll {
+        overflow: scroll;
+        background-color: lightseagreen;
+        color: white;
+        width: 100px;
+        height: 80px;
+    }
+    div.hidden {
+        overflow: hidden;
+        background-color: lightcoral;
+        width: 100px;
+        height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <p>overflow 属性规定当内容溢出元素框时发生的事情</p>
+  <p>overflow:滚动</p>
+  <div class="scroll">当您希望更好地控制布局时，可以使用溢出属性. 默认值是可见的</div>
+  <p>overflow:隐藏</p>
+  <div class="hidden">当您希望更好地控制布局时，可以使用溢出属性. 默认值是可见的</div>
+</body>
+</html>

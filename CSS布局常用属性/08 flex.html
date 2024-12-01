@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      .one{
+          width:980px;
+          height: 500px;
+          border:1px solid #ddd;
+          margin: 20px auto;
+          /*伸缩盒属性需要给容器设置*/
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .one>div{
+          width: 400px;
+          height: 300px;
+          border:1px solid tomato;;
+      }
+  </style>
+  <script>
+    var a = 10
+    var b = 30
+    var c = a + b
+    console.log(' - c = -  -->', c)
+
+    var res
+    console.log(' - res -  -->', res)
+  </script>
+</head>
+<body>
+<!--父容器-->
+<div class="one">
+  <!--每一个被包含的就是一个项目-->
+  <div>左</div>
+  <div>中</div>
+  <div>右</div>
+
+  <p onclick="alert('我被点击了')">===</p>
+</div>
+</body>
+</html>

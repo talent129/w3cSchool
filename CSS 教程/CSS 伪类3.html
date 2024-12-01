@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    p:first-child i {
+        color: red;
+    }
+    q:lang(no) {
+        quotes: "~""~";
+    }
+  </style>
+</head>
+<body>
+  <p>我是一个<i>强壮</i>的人； 我是一个<i>强壮</i>的人</p>
+  <p style="font-weight: bold">匹配所有作为第一个子元素的 &lt;p&gt; 元素中的所有 &lt;i&gt; 元素</p>
+  <p style="font-weight: bold; color: red">CSS - :lang 伪类</p>
+  <p>:lang 伪类使你有能力为不同的语言定义特殊的规则</p>
+  <p>在下面的例子中，:lang 类为属性值为 no 的 q 元素定义引号的类型：</p>
+  <p>一些文字<q lang="no">段落中的引用</q>一些文字</p>
+</body>
+</html>

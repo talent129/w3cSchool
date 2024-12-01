@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 导航栏</title>
+  <style>
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    a {
+        display: block;
+        background-color: lightblue;
+        width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <p>作为标准的 HTML 基础一个导航栏是必须的</p>
+  <p>导航条基本上是一个链接列表，所以使用 &lt;ul&gt; 和 &lt;li&gt; 元素非常有意义</p>
+  <ul>
+    <li><a href="#1">主页</a></li>
+    <li><a href="#2">新闻</a></li>
+    <li><a href="#3">联系</a></li>
+    <li><a href="#4">关于</a></li>
+  </ul>
+  <p style="font-weight: bold; color: orange">list-style-type:none - 移除列表前小标志。<br />
+    一个导航栏并不需要列表标记</p>
+  <p>移除浏览器的默认设置将边距和填充设置为 0</p>
+  <p>display:block - 显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度</p>
+  <p>width:100px - 块元素默认情况下是最大宽度。我们要指定一个 100 像素的宽度</p>
+  <p style="font-weight: bold; color: blue">水平导航栏</p>
+  <p>有两种方法创建横向导航栏。<br />
+    使用内联或浮动的列表项。</p>
+  <p>这两种方法都很好，但如果你想链接到具有相同的大小，你必须使用浮动的方法</p>
+
+</body>
+</html>

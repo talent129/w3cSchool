@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 语法</title>
+  <style>
+      #p1 { /* id选择器 */
+          color: blue;
+      }
+    p.center { /* class类选择器 */
+        color: red;
+        text-align: center;
+    }
+    h3 { /* 标签选择器 */
+        color: orange;
+    }
+  </style>
+</head>
+<body>
+  <p>CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明</p>
+  <p>
+    选择器通常是您需要改变样式的 HTML 元素。<br />
+    每条声明由一个属性和一个值组成。<br />
+    属性（property）是您希望设置的样式属性（style attribute）。<br />
+    每个属性有一个值。属性和值被冒号分开。
+  </p>
+  <p>CSS 声明总是以分号 ( ; ) 结束，声明组以大括号 ({ }) 括起来</p>
+  <p>注释是用来解释你的代码，并且可以随意编辑它，浏览器会忽略它。<br />
+    CSS注释以 "/*" 开始, 以 "*/" 结束,</p>
+  <p id="p1">id选择器id="p1" => #p1{}</p>
+  <strong>可以指定特定的 HTML 元素使用 class</strong>
+  <h2 class="center">我是标题 也有名为center的class</h2>
+  <p class="center"> class类选择器 => 我是一个段落 也有名为center的class => p.center{}</p>
+  <h3>标签选择器 => 即以 HTML 标签作为 CSS 修饰所用的选择器。 h3{}</h3>
+  <p style="color: lightgreen">内联选择器</p>
+  <p>这四种 CS 选择器有修饰上的优先级，即：<br />
+    内联选择器 &gt; id选择器 &gt; 类选择器 &gt; 标签选择器 </p>
+</body>
+</html>

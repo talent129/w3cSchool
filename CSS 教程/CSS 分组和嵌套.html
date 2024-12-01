@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 分组和嵌套</title>
+  <style>
+    /*h1 {*/
+    /*    color: green;*/
+    /*}*/
+    /*h2 {*/
+    /*    color: green;*/
+    /*}*/
+    /*p {*/
+    /*    color: green;*/
+    /*}*/
+    h1, h2, p {
+        color: green;
+    }
+    h3 {
+        background-color: orange;
+        color: blue;
+    }
+    .marked h3 {
+        color: white;
+    }
+  </style>
+</head>
+<body>
+  <p>CSS 分组可以将具有相同样式的选择器进行分组，减少代码量</p>
+  <p>CSS 嵌套适用于选择器内部的选择器的样式</p>
+  <h1>Hello World</h1>
+  <h2>这是一个二级标题</h2>
+  <p>这是一个段落</p>
+  <p style="font-weight: bold">为了尽量减少代码，你可以使用分组选择器。</p>
+  <p>每个选择器用逗号分隔.</p>
+  <p style="font-weight: bold">提示：您可以对任意多个选择器进行分组，CSS 对此没有任何限制。</p>
+  <p style="font-weight: bold; color: red">嵌套选择器</p>
+  <h3>这是三级标题</h3>
+  <div class="marked">
+    <h3>这个三级标题在类名为marked的div之中</h3>
+  </div>
+
+</body>
+</html>

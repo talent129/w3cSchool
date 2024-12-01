@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>绝对定位</title>
+  <style>
+    .one, .two, .three {
+        width: 100px;
+        height: 100px;
+    }
+    .one {
+        background: #0000FF;
+    }
+    .two {
+        background: #00FFFF;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+    .three {
+        background: #FF00FF;
+    }
+    .other {
+        width: 200px;
+        height: 200px;
+        background: #00FF00;
+        position: relative;
+        left: 200px;
+    }
+    .inner {
+        width: 100px;
+        height: 100px;
+        background: purple;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+    .grand {
+        background: red;
+        width: 300px;
+        height: 300px;
+    }
+    .father {
+        background: green;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 200px;
+        top: 100px;
+    }
+    .son {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="other">
+    <div class="inner"></div>
+  </div>
+  <div class="grand">
+    <div class="father">
+      <div class="son"></div>
+    </div>
+  </div>
+  <ul>
+    <li>以其他元素为参考物，移动指定距离的定位方式</li>
+    <li>在绝对定位的时候，被定位的元素不会占据原有物理位置</li>
+  </ul>
+  <p style="text-indent: 2em; font-weight: bold">关于绝对定位的参考点:</p>
+  <ol>
+    <li>如果该元素的外层元素中没有任何一个元素采用position定位，那么此时定位的参考元素变为body或者说是页面</li>
+    <li>如果元素的外层元素有定位设置，那么这个外层元素就成为该元素的定位参考点</li>
+    <li>如果元素的外层元素没有设置position的值，那么该元素将寻找距离自己最近的其它设定过position的外层元素作为参照物(多层嵌套)</li>
+  </ol>
+</body>
+</html>

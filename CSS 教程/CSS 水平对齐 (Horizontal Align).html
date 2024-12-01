@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 水平对齐 (Horizontal Align)</title>
+  <style>
+    .center {
+        margin: auto;
+        width: 70%;
+        background-color: lightgreen;
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p>在CSS中，有几个属性用于元素水平对齐</p>
+  <p style="font-weight: bold; color: blue">块元素对齐</p>
+  <p>块元素是一个元素，占用了全宽，前后都是换行符</p>
+  <p>块元素的例子:</p>
+  <ul>
+    <li>&lt;h1&gt;</li>
+    <li>&lt;p&gt;</li>
+    <li>&lt;div&gt;</li>
+  </ul>
+  <p style="font-weight: bold; color: red">中心对齐,使用margin属性</p>
+  <p>块元素可以把左，右页边距设置为"自动"对齐。</p>
+  <p>Note: 在IE8中使用margin:auto属性无法正常工作，除非声明 !DOCTYPE<br />
+    margin属性可任意拆分为左，右页边距设置自动指定，结果都是出现居中元素</p>
+  <div class="center">
+    <p>居中对齐</p>
+    <p>孔雀东南飞</p>
+  </div>
+  <p>提示: 如果宽度是 100％，对齐是没有效果的。</p>
+  <p style="font-weight: bold; color: red">使用 position 属性设置左，右对齐</p>
+  <p>元素对齐的方法之一是使用绝对定位</p>
+  <div style="position: absolute; right: 0px; top: 20px; background-color: lightcoral;">
+    <p>举头望明月</p>
+    <p>低头思故乡</p>
+  </div>
+  <p><span style="color: blue">注意：</span>绝对定位与文档流无关，所以它们可以覆盖页面上的其它元素</p>
+  <p style="font-weight: bold; color: red">使用 float 属性设置左，右对齐</p>
+  <p>使用 float 属性是对齐元素的方法之一</p>
+  <div style="float: right; background-color: lightblue; width: 300px">
+    <p>春眠不觉晓</p>
+    <p>处处闻啼鸟</p>
+  </div>
+  <p style="font-weight: bold; color: blue">使用 Padding 设置垂直居中对齐</p>
+  <p style="color: red; padding: 70px 0; border: 3px solid yellow; text-align: center">CSS 中一个简单的设置垂直居中对齐的方式就是头部顶部使用 padding</p>
+
+</body>
+</html>

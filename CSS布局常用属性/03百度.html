@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>百度一下，你就知道</title>
+  <style>
+      /*头部区域*/
+      header>div:first-child {
+          /*position: relative;*/
+      }
+      header>div:last-child {
+          position: absolute;
+          right: 8px;
+          top: 8px;
+      }
+      /*搜索区域*/
+      .center {
+          width: 500px;
+          height: 300px;
+          background: tomato;
+          position: relative;
+          top: 100px;
+          /*计算属性*/
+          left: calc(50% - 250px);
+      }
+      .list>div:first-child {
+          background: cyan;
+          position: absolute;
+          left: 0px;
+          top: 50px;
+          width: 250px;
+      }
+      .list>div:last-child {
+          background: magenta;
+          position: absolute;
+          left: 250px;
+          top: 50px;
+          width: 250px;
+      }
+      /*底部区域*/
+      footer {
+          width: 100%;
+          position: absolute;
+          bottom: 10px;
+      }
+      aside {
+          width: 30px;
+          height: 100px;
+          background: #0000FF;
+          position: absolute;
+          right: 10px;
+          bottom: 100px;
+      }
+      .mask {
+          background: grey;
+          opacity: 0.5;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+      }
+      .login {
+          width: 600px;
+          height: 300px;
+          background: white;
+          position: absolute;
+          left: calc(50% - 300px);
+          top: calc(50% - 150px);
+      }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <header>
+      <div><a href="https://news.baidu.com" target="_blank">新闻</a> hao123 地图 贴吧 视频 图片 网盘 更多</div>
+      <div>设置 登录</div>
+    </header>
+    <div class="center">
+      <form action="">
+        <input type="search" name="search" />
+        <input type="submit" value="submit" />
+      </form>
+      <div class="list">
+        <div class="list_left">左边列表</div>
+        <div class="list_right">右边列表</div>
+      </div>
+    </div>
+    <aside>侧边</aside>
+    <footer>关于百度About Baidu使用百度前必读帮助中心企业推广京公网安备11000002000001号京ICP证030173号互联网新闻信息服务许可证11220180008网络文化经营许可证： 京网文〔2023〕1034-029号</footer>
+  </div>
+  <div class="mask"></div>
+  <div class="login">登录</div>
+</body>
+</html>

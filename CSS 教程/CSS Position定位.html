@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position定位</title>
+  <style>
+      img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -1;
+      }
+  </style>
+</head>
+<body>
+  <p>z-index 属性指定了一个元素的堆叠顺序（哪个元素应该放在前面，或后面）<br />
+  一个元素可以有正数或负数的堆叠顺序</p>
+  <h1>这是一个h1标题</h1>
+  <img src="images/ddd.png" width="300px" height="200px" alt="fail" />
+  <p>具有更高堆叠顺序的元素总是在较低的堆叠顺序元素的前面。</p>
+  <p><span style="color: red">注意： </span>如果两个定位元素重叠，没有指定 z - index，最后定位在 HTML 代码中的元素将被显示在最前面。</p>
+</body>
+</html>

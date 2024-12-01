@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 背景</title>
+  <style>
+    body {
+        background-image: url('images/权重.png');
+        background-repeat: no-repeat; /* repeat-x */
+        background-position: right top;
+    }
+  </style>
+</head>
+<body>
+  <p>CSS 背景属性用于定义 HTML 元素的背景</p>
+  <p>CSS 属性定义背景效果：</p>
+  <ul>
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-repeat</li>
+    <li>background-attachment</li>
+    <li>background-position</li>
+  </ul>
+  <p><b style="color: red">提示：</b>background-color 不能继承，其默认值是 transparent。<br />
+    如果一个元素没有指定背景色，那么背景就是透明的，这样其父元素的背景才可见</p>
+  <p>background-image 属性描述了元素的背景图像.<br />
+    默认情况下，背景图像进行平铺重复显示，以覆盖整个元素实体</p>
+  <p>默认情况下 background-image 属性会在页面的水平或者垂直方向平铺。</p>
+  <p>background-position 属性改变图像在背景中的位置</p>
+  <p><b style="color: red">提示：</b> 为 background-position 属性提供值有很多方法。<br />
+    首先，可以使用一些关键字：top、bottom、left、right 和 center；<br />
+    其次，可以使用长度值，如 100px 或 5cm；<br />
+    最后也可以使用百分数值。<br />
+    不同类型的值对于背景图像的放置稍有差异。</p>
+  <strong>关键字</strong>
+  <p>只要保证不超过两个关键字：一个对应水平方向，另一个对应垂直方向，<br />
+    那么你可以设置位置关键字以任何顺序出现。</p>
+  <p>如果只有一个关键字，则会默认另一个关键字为 center</p>
+  <strong>背景- 简写属性</strong>
+  <p>背景颜色的简写属性为 "background":</p>
+  <p>body {background:#ffffff url('img_tree.png') no-repeat right top;}</p>
+  <strong>当使用简写属性时，属性值的顺序为：</strong>
+  <ul>
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-repeat</li>
+    <li>background-attachment</li>
+    <li>background-position</li>
+  </ul>
+  <p>background-attachment ==> 背景图像是否固定或者随着页面的其余部分滚动</p>
+</body>
+</html>

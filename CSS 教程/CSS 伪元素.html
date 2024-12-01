@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 伪元素</title>
+</head>
+<body>
+  <p>CSS 伪元素是用来添加一些选择器的特殊效果。<br />
+    CSS 伪元素控制的内容和元素是没有差别的，但是它本身只是基于元素的抽象，并不存在于文档中，所以称为伪元素</p>
+  <p>伪元素的语法:</p>
+  <p>selector:pseudo-element {property:value;}</p>
+  <p>CSS类也可以使用伪元素:</p>
+  <p>selector.class:pseudo-element {property:value;}</p>
+  <p>在CSS1和CSS2中，伪元素和伪类都采用单冒号进行表示，<br />
+    在CSS3中为了区分伪元素和伪类，规定使用双冒号代表伪元素，单冒号代表伪类，<br />
+    即CSS3标准中应该这么写：​selector.class:：pseudo-element {property:value;}​</p>
+  <p>虽然CSS3规定了必须使用双冒号，但实际上使用单冒号也可以工作，<br />
+    这是由于CSS的兼容性带来的，但这并不意味着可以无所忌惮的使用单冒号，<br />
+    因为单双冒号的区分，可以给CSS代码带来更高的可读性。</p>
+</body>
+</html>

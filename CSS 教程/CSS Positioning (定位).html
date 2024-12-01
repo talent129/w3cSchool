@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Positioning (定位)</title>
+  <style>
+    .pos_fixed {
+        position: fixed;
+        top: 100px;
+        right: 50px;
+    }
+    .pos_left {
+        position: relative;
+        left: -20px;
+    }
+    .pos_left2 {
+        position: relative;
+        left: 20px;
+    }
+    h3.pos_top {
+        position: relative;
+        top: -40px;
+    }
+    h3.pos_absolute {
+        position: absolute;
+        right: 100px;
+        top: 150px;
+    }
+  </style>
+</head>
+<body>
+  <p>CSS position 属性，允许您将布局的一部分与另一部分重叠，<br />
+    还可以完成多年来通常需要使用多个表格才能完成的任务</p>
+  <p>CSS 定位属性允许你为一个元素定位。<br />
+    它也可以将一个元素放在另一个元素后面，并指定一个元素的内容太大时，应该发生什么。</p>
+  <p>元素可以使用的顶部，底部，左侧和右侧属性定位。<br />
+    然而，这些属性无法工作，除非事先设定 position 属性。<br />
+    他们也有不同的工作方式，这取决于定位方法.</p>
+  <p style="font-weight: bold; color: green; font-size: 20px;">有四种不同的定位方法</p>
+  <p style="font-weight: bold; color: red">Static 定位</p>
+  <p style="color: blue">HTML 元素的默认值，即没有定位，元素出现在正常的流中</p>
+  <p style="color: blue;">静态定位的元素不会受到 top, bottom, left, right 影响</p>
+  <p style="font-weight: bold; color: red">Fixed 定位</p>
+  <p style="color: blue">元素的位置相对于浏览器窗口是固定位置。<br />
+    即使窗口是滚动的它也不会移动</p>
+  <p class="pos_fixed">这是position定位为fixed的文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p>一些文字</p>
+  <p style="color: purple">注意： Fixed 定位在 IE7 和 IE8 下需要描述 !DOCTYPE 才能支持.<br />
+    Fixed 定位使元素的位置与文档流无关，因此不占据空间。<br />
+    Fixed 定位的元素和其他元素重叠。</p>
+  <p style="color: red; font-weight: bold">Relative 定位</p>
+  <p style="color: blue">相对定位元素的定位是相对其正常位置。</p>
+  <h2>这是一个没有位置的标题</h2>
+  <h2 class="pos_left">此标题根据其正常位置向左移动</h2>
+  <h2 class="pos_left2">此标题根据其正常位置向右移动</h2>
+  <p>相对定位相对于元素的原始位置移动元素。</p>
+  <p>可以移动的相对定位元素的内容和相互重叠的元素，它原本所占的空间不会改变</p>
+  <h3>这是一段没有定位的标题h3</h3>
+  <h3 class="pos_top">这是一个相对定位 top-50的标题h3</h3>
+  <h3>这是一个也没有定位的标题</h3>
+  <p style="font-weight: bold; color: blue">相对定位元素经常被用来作为绝对定位元素的容器块</p>
+  <p style="font-weight: bold; color: red">Absolute 定位</p>
+  <p style="font-weight: bold; color: blue">绝对定位的元素的位置相对于最近的已定位父元素，<br />
+    如果元素没有已定位的父元素，那么它的位置相对于 &lt;html&gt;</p>
+  <p>用绝对定位,一个元素可以放在页面上的任何位置。<br />
+    标题下面放置距离右边的页面100 px和距离页面的顶部150 px的元素。</p>
+  <h3 class="pos_absolute">这是一个绝对位置的标题</h3>
+  <p style="font-weight: bold; color: blue">Absolutely 定位使元素的位置与文档流无关，因此不占据空间。<br />
+    Absolutely 定位的元素和其他元素重叠。</p>
+  <p style="font-weight: bold; color: red">重叠的元素</p>
+  <p>元素的定位与文档流无关，所以它们可以覆盖页面上的其它元素</p>
+</body>
+</html>

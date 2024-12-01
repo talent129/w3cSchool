@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>相邻兄弟选择器</title>
+  <style>
+    div + p {
+        background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <p style="color: blue">相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素。<br />
+    如果需要选择紧接在另一个元素后的元素，而且二者有相同的父元素，可以使用相邻兄弟选择器</p>
+  <div>
+    <h3>坎坎坷坷扩扩扩 标题h3</h3>
+    <p>嗯呢呢呢嗯呢div里的p</p>
+  </div>
+  <p>div外面的第一个p</p>
+  <p>div外面的第二个p</p>
+</body>
+</html>

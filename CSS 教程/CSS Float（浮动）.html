@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Float（浮动）</title>
+  <style>
+    img {
+        float: right;
+    }
+    .thumbnail {
+        float: left;
+        margin: 5px;
+    }
+    .thumbnail1 {
+        float: left;
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+    }
+    .text_line {
+        font-weight: bold;
+        clear: both;
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <p>CSS float 属性定义元素在哪个方向浮动，浮动元素会生成一个块级框，<br />
+    直到该块级框的外边缘碰到包含框或者其他的浮动框为止</p>
+  <p>
+    CSS 的 Float（浮动），会使元素向左或向右移动，其周围的元素也会重新排列。<br />
+    Float（浮动），往往是用于图像，但它在布局时一样非常有用。
+  </p>
+  <p style="font-weight: bold; color: red">元素怎样浮动</p>
+  <p>元素的水平方向浮动，意味着元素只能左右移动而不能上下移动。</p>
+  <p>一个浮动元素会尽量向左或向右移动，<br />
+    直到它的外边缘碰到包含框或另一个浮动框的边框为止。</p>
+  <p>浮动元素之后的元素将围绕它。<br />
+    浮动元素之前的元素将不会受到影响。</p>
+  <p style="color: blue">如果图像是右浮动，下面的文本流将环绕在它左边:</p>
+  <p>
+    <img src="images/ddd.png" width="95" height="50" alt="fail" />
+    这是一些文字 这是一些文字 这是一些文字 这是一些文字 这是一些文字
+    这是一些文字 这是一些文字 这是一些文字 这是一些文字 这是一些文字
+    这是一些文字 这是一些文字 这是一些文字 这是一些文字 这是一些文字
+    这是一些文字 这是一些文字 这是一些文字 这是一些文字 这是一些文字
+    这是一些文字 这是一些文字 这是一些文字 这是一些文字 这是一些文字
+    这是一些文字 这是一些文字 这是一些文字 这是一些文字 这是一些文字
+  </p>
+  <p style="color: blue">彼此相邻的浮动元素</p>
+  <p>如果你把几个浮动的元素放到一起，如果有空间的话，它们将彼此相邻。<br />
+    在这里，我们对图片廊使用 float 属性</p>
+  <p style="font-weight: bold; color: purple">图片库</p>
+  <img class="thumbnail" src="images/boxmodel.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail" src="images/ddd.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail" src="images/standard_boxModel.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail" src="images/权重.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail" src="images/boxmodel.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail" src="images/ddd.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail" src="images/standard_boxModel.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail" src="images/权重.png" width="100" height="60" alt="fail" />
+  <p style="font-weight: bold; color: red">清除浮动 - 使用 clear</p>
+  <p>元素浮动之后，周围的元素会重新排列，为了避免这种情况，使用 clear 属性</p>
+  <p>clear 属性指定元素两侧不能出现浮动元素</p>
+  <p>使用 clear 属性往文本中添加图片廊</p>
+  <img class="thumbnail1" src="images/boxmodel.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail1" src="images/ddd.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail1" src="images/standard_boxModel.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail1" src="images/权重.png" width="100" height="60" alt="fail" />
+  <p class="text_line">第二行</p>
+  <img class="thumbnail1" src="images/boxmodel.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail1" src="images/ddd.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail1" src="images/standard_boxModel.png" width="100" height="60" alt="fail" />
+  <img class="thumbnail1" src="images/权重.png" width="100" height="60" alt="fail" />
+</body>
+</html>

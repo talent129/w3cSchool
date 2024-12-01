@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Table (表格)</title>
+  <style>
+    table, th, td {
+        border: 1px solid red;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    table {
+        width: 100%;
+    }
+    th {
+        height: 50px;
+    }
+    td {
+        text-align: right;
+    }
+    td {
+        height: 50px;
+        vertical-align: bottom;
+    }
+    td {
+        padding: 15px;
+    }
+    td {
+        background-color: green;
+        color: white;
+    }
+  </style>
+</head>
+<body>
+  <p>指定 CSS 表格边框，使用 border 属性。</p>
+  <table>
+    <tr>
+      <th>姓</th>
+      <th>名字</th>
+    </tr>
+    <tr>
+      <td>李</td>
+      <td>小龙</td>
+    </tr>
+    <tr>
+      <td>霍</td>
+      <td>元甲</td>
+    </tr>
+  </table>
+  <p>为了显示一个表的单个边框，使用 border-collapse属性</p>
+  <strong>折叠边框</strong>
+  <p>border-collapse 属性设置表格的边框是否被折叠成一个单一的边框或隔开</p>
+  <p>width 和 height 属性定义表格的宽度和高度</p>
+  <p>表格中的文本对齐和垂直对齐属性。</p>
+  <p>text-align 属性设置水平对齐方式，像左，右，或中心</p>
+  <p>垂直对齐属性设置垂直对齐，比如顶部，底部或中间</p>
+  <p>如果在表的内容中控制空格之间的边框，应使用 td 和 th 元素的填充属性</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 链接样式</title>
+  <style>
+      a:link {color:#FF0000;}      /* 未访问链接*/
+      a:visited {color:#00FF00;}  /* visited link */
+      a:hover {color:#FF00FF; cursor: crosshair}  /* mouse over link */
+      a:active {color:#0000FF;}  /* selected link */
+  </style>
+</head>
+<body>
+  <p>四个链接状态是</p>
+  <ul>
+    <li>a:link - 正常，未访问过的链接</li>
+    <li>a:visited - 用户已访问过的链接</li>
+    <li>a:hover - 当用户鼠标放在链接上时</li>
+    <li>a:active - 链接被点击的那一刻</li>
+  </ul>
+  <a href="#">快快快</a>
+  <p>当设置为若干链路状态的样式，也有一些顺序规则</p>
+  <ul>
+    <li>a:hover 必须跟在 a:link 和 a:visited 后面</li>
+    <li>a:active 必须跟在 a:hover 后面</li>
+  </ul>
+  <strong>鼠标形状</strong>
+  <p>default => 默认光标，箭头</p>
+  <p>pointer => 超链接的指针，手型</p>
+  <p>wait => 指示程序正在忙</p>
+  <p>help => 指示可用的帮忙</p>
+  <p>text => 指示文本</p>
+  <p>crosshair => 鼠标呈现十字状</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Padding（填充）</title>
+  <style>
+    table, td {
+        border-collapse: collapse;
+        border: 1px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <p>CSS Padding（填充）属性定义元素边框与元素内容之间的空间。</p>
+  <p>当元素的 Padding（填充）（内边距）被清除时，所"释放"的区域将会受到元素背景颜色的填充。<br />
+    单独使用填充属性可以改变上下左右的填充。缩写填充属性也可以使用，一旦改变一切都改变</p>
+  <p style="color: green">CSS padding 属性可以使用长度值或百分比值，但与 margin 属性不同，它不允许使用负值。</p>
+  <p style="font-weight: bold">内边距的百分比数值</p>
+  <p>CSS padding 属性的百分比数值是相对于其父元素的 width 计算的，如果改变了父元素的 width，则它们也会改变。</p>
+  <div style="width: 200px; border: 1px solid red">这个段落包含在一个宽度为200像素的DIV中</div>
+  <p style="font-weight: bold; color: red">注意：上下内边距与左右内边距一致，即上下内边距的百分数会相对于父元素宽度设置，而不是相对于高度。</p>
+  <p style="font-weight: bold">填充 - 简写属性</p>
+  <p>
+    为了缩短代码，它可以在一个属性中指定的所有填充属性。<br />
+    这就是所谓的缩写属性。所有的填充属性的缩写属性是"padding"
+  </p>
+  <p style="font-weight: bold; color: green">Padding 属性，可以有一到四个值。</p>
+  <table>
+    <tr>
+      <td>padding:25px 50px 75px 100px;</td>
+      <td>上 右 下 左</td>
+    </tr>
+    <tr>
+      <td>padding:25px 50px 75px;</td>
+      <td>上 左右 下</td>
+    </tr>
+    <tr>
+      <td>padding:25px 50px;</td>
+      <td>上下 左右</td>
+    </tr>
+    <tr>
+      <td>padding:25px;</td>
+      <td>所有</td>
+    </tr>
+  </table>
+</body>
+</html>

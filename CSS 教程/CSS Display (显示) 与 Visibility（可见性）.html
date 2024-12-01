@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Display (显示) 与 Visibility（可见性）</title>
+  <style>
+    h1.header {
+        visibility: hidden;
+    }
+    h2.hidden {
+        display: none;
+    }
+    li {
+        display: inline;
+    }
+    span {
+        display: block;
+    }
+  </style>
+</head>
+<body>
+  <p>CSS display 属性和 visibility 属性都可以用来隐藏某个元素，但是这两个属性有不同的定义</p>
+  <p>display 属性设置一个元素应如何显示，visibility 属性指定一个元素应可见还是隐藏。</p>
+  <p style="font-weight: bold">隐藏元素 - display:none 或 visibility:hidden</p>
+  <p>隐藏一个元素可以通过把 display 属性设置为"none"，或把 visibility 属性设置为"hidden"。<br />
+    但是请注意，这两种方法会产生不同的结果</p>
+  <p>visibility:hidden 可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。<br />
+    也就是说，该元素虽然被隐藏了，但仍然会影响布局</p>
+  <h1>This is a visible heading</h1>
+  <h1 class="header">This is a hidden heading</h1>
+  <h1>visibility:hidden 隐藏，仍然占用与未隐藏之前一样的空间</h1>
+  <p>display:none 可以隐藏某个元素，且隐藏的元素不会占用任何空间。<br />
+    也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失。</p>
+  <h2>This is a visible heading</h2>
+  <h2 class="hidden">This is a hidden heading</h2>
+  <h2>注意 隐藏没有占用空间</h2>
+  <p style="font-weight: bold">CSS Display - 块和内联元素</p>
+  <p>块元素是一个元素，占用了全部宽度，在前后都是换行符</p>
+  <p>块元素的例子：</p>
+  <ul>
+    <li>&lt;h1&gt;</li>
+    <li>&lt;p&gt;</li>
+    <li>&lt;div&gt;</li>
+  </ul>
+  <p style="font-weight: bold">内联元素只需要必要的宽度，不强制换行。</p>
+  <p>内联元素的例子：</p>
+  <ul>
+    <li>&lt;span&gt;</li>
+    <li>&lt;a&gt;</li>
+  </ul>
+  <p style="font-weight: bold">如何改变一个元素显示</p>
+  <p>可以更改内联元素为块元素，反之亦然，<br />
+    可以使页面看起来是以一种特定的方式组合，并仍然遵循 web 标准。</p>
+  <p>将此链接列表显示为水平菜单：</p>
+  <ul>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a> </li>
+  </ul>
+  <p style="font-weight: bold">下面的示例把 span 元素作为块元素:</p>
+  <h3>标题h3</h3>
+  <span>这是一个span 然后修改为块元素</span>
+  <span>这也是一个span 修改为块元素</span>
+  <p style="font-weight: bold; color: green">
+    <span style="color: red;">注意：</span>变更元素的显示类型看该元素是如何显示，它是什么样的元素。<br />
+    例如：一个内联元素设置为 display:block 是不允许有它内部的嵌套块元素。 </p>
+</body>
+</html>

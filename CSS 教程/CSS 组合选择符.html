@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 组合选择符</title>
+  <style>
+    div p {
+        background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <p>CSS 组合选择符可以让你直观的明白选择器与选择器之间的关系</p>
+  <p>组合选择符说明了两个选择器直接的关系</p>
+  <p>CSS组合选择符包括各种简单选择符的组合方式</p>
+  <p>在 CSS3 中包含了四种组合方式:</p>
+  <ul>
+    <li>后代选取器(以空格分隔)</li>
+    <li>子元素选择器(以大于号分隔）</li>
+    <li>相邻兄弟选择器（以加号分隔）</li>
+    <li>普通兄弟选择器（以波浪号分隔）</li>
+  </ul>
+  <p style="font-weight: bold; color: red">后代选取器</p>
+  <p style="color: blue">后代选取器匹配所有指定元素的后代元素。 div p</p>
+  <div>
+    <p>我是在div中的p元素</p>
+    <p>我是在div中的p元素</p>
+    <p>我是在div中的p元素</p>
+  </div>
+</body>
+</html>

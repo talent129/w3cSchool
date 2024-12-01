@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    const str1 = "Hello World"
+    console.log(' -  -  -->', typeof str1)
+
+    setTimeout(function () {
+      console.log("First");
+      setTimeout(function () {
+        console.log("Second");
+        setTimeout(function () {
+          console.log("Third");
+        }, 3000);
+      }, 4000);
+    }, 1000);
+
+  </script>
+</body>
+</html>

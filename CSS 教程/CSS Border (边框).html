@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Border (边框)</title>
+  <style>
+    p.none {
+        border-style: none;
+    }
+    p.dotted {
+        border-style: dotted;
+    }
+    p.dashed {
+        border-style: dashed;
+    }
+    p.solid {
+        border-style: solid;
+    }
+    p.double {
+        border-style: double;
+    }
+    p.groove {
+        border-style: groove;
+    }
+    p.ridge {
+        border-style: ridge;
+    }
+    p.inset {
+        border-style: inset;
+    }
+    p.outset {
+        border-style: outset;
+    }
+    p.none {
+        border-style: hidden;
+    }
+    p.one {
+        border-style: solid;
+        border-width: 10px;
+    }
+    p.two {
+        border-style: solid;
+        border-width: medium;
+    }
+    p.three {
+        border-style: dashed;
+        border-width: 1px;
+    }
+    p.single {
+        border-left-style: solid;
+        border-left-color: red;
+        border-left-width: 5px;
+        border-right-style: dashed;
+        border-right-color: green;
+        border-top-style: double;
+        border-top-color: purple;
+        border-bottom-style: inset;
+        border-bottom-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <p>CSS 边框 (border) 可以是围绕元素内容和内边距的一条或多条线，对于这些线条，您可以自定义它们的样式、宽度以及颜色</p>
+  <p>CSS边框属性允许你指定一个元素边框的样式和颜色</p>
+  <p>边框样式属性指定要显示什么样的边界。</p>
+  <p>border-style属性用来定义边框的样式</p>
+  <ul>
+    <li>none: 默认无边框</li>
+    <li>dotted: 定义一个点线框</li>
+    <li>dashed: 定义一个虚线框</li>
+    <li>solid: 定义实线边界</li>
+    <li>double: 定义两个边界。 两个边界的宽度和border-width的值相同</li>
+    <li>groove: 定义3D沟槽边界。效果取决于边界的颜色值</li>
+    <li>ridge: 定义3D脊边界。效果取决于边界的颜色值</li>
+    <li>inset:定义一个3D的嵌入边框。效果取决于边界的颜色值</li>
+    <li>outset: 定义一个3D突出边框。 效果取决于边界的颜色值</li>
+  </ul>
+
+  <p class="none">没有边框</p>
+  <p class="dotted">一个点线框</p>
+  <p class="dashed">一个虚线框</p>
+  <p class="solid">实线边界</p>
+  <p class="double">两个边界</p>
+  <p class="groove">3D沟槽边界</p>
+  <p class="ridge">3D脊边界</p>
+  <p class="inset">3D嵌入边框</p>
+  <p class="outset">3D突出边框</p>
+  <p class="hidden">隐藏边框</p>
+  <p style="font-weight: bold">可以通过 border-width 属性为边框指定宽度</p>
+  <p>为边框指定宽度有两种方法：可以指定长度值，比如 2px 或 0.1em；<br />
+    或者使用 3 个关键字之一，它们分别是 thin 、medium（默认值） 和 thick</p>
+  <p class="one">一些文字</p>
+  <p class="two">一些文字</p>
+  <p class="three">一些文字</p>
+  <p style="font-weight: bold; color: green">注意: "border-width" 属性 如果单独使用则不起作用. <br />
+    要先使用 "border-style" 属性来设置 borders .</p>
+  <p style="font-weight: bold; color: #00FF00">边框颜色</p>
+  <p>border-color 属性用于设置边框的颜色，它一次可以接受最多 4 个颜色值</p>
+  <p>还可以设置边框的颜色为"transparent"</p>
+  <p><span style="color: red">注意： </span> border-color 单独使用是不起作用的，必须得先使用 border-style 来设置边框样式。</p>
+  <p style="font-weight: bold">边框-单独设置各边</p>
+  <p>在 CSS 中，可以指定不同的侧面不同的边框：</p>
+  <p class="single">单独设置不同侧面边框</p>
+  <p style="color: green; font-weight: bold">边框-简写属性</p>
+  <p style="border: 5px solid red">这是一段文字 边框-简写属性 ===> border: 5px solid red</p>
+</body>
+</html>

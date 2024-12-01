@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 列表样式 (ul)</title>
+  <style>
+      ul.a {list-style-type:circle;}
+      ul.b {list-style-type:square;}
+      ol.c {list-style-type:upper-roman;}
+      ol.d {list-style-type:lower-alpha;}
+  </style>
+</head>
+<body>
+  <p>CSS 列表属性作用如下：</p>
+  <ul>
+    <li>设置不同的列表项标记为有序列表</li>
+    <li>设置不同的列表项标记为无序列表</li>
+    <li>设置列表项标记为图像</li>
+  </ul>
+  <p>在 HTML 中，有两种类型的 HTML列表：</p>
+  <ul>
+    <li>无序列表 - 列表项的标记使用特殊图形（如小黑点、小方框等）</li>
+    <li>有序列表 - 列表项的标记使用数字或字母</li>
+  </ul>
+  <p>使用CSS，可以列出进一步的样式，并可用图像作列表项标记</p>
+  <p style="font-weight: bold">list-style-type 属性指定列表项标记的类型是</p>
+  <p>无序列表实例:</p>
+  <ul class="a">
+    <li>咖啡</li>
+    <li>茶</li>
+    <li>可口可乐</li>
+  </ul>
+  <ul class="b">
+    <li>咖啡</li>
+    <li>茶</li>
+    <li>可口可乐</li>
+  </ul>
+  <p>有序列表实例:</p>
+  <ol class="c">
+    <li>咖啡</li>
+    <li>茶</li>
+    <li>可口可乐</li>
+  </ol>
+  <ol class="d">
+    <li>咖啡</li>
+    <li>茶</li>
+    <li>可口可乐</li>
+  </ol>
+  <strong>list-style-type 属性的常见属性值的描述</strong>
+  <ul style="list-style-type: circle">
+    <li>none：不使用项目符号 </li>
+    <li>disc：实心圆 </li>
+    <li>circle：空心圆 </li>
+    <li>square：实心方块 </li>
+    <li>decimal：阿拉伯数字  </li>
+    <li>lower-alpha：小写英文字母  </li>
+    <li>upper-alpha：大写英文字母  </li>
+    <li>lower-roman：小写罗马数字  </li>
+    <li>upper-roman：大写罗马数字 </li>
+  </ul>
+  <strong>要指定列表项标记的图像，使用列表样式图像属性</strong>
+  <ul style="list-style-image: url('images/ddd.png')">
+    <li>图标</li>
+    <li>图像</li>
+  </ul>
+</body>
+</html>

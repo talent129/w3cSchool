@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 伪类</title>
+  <style>
+    a:link {
+        color: red; /* 未访问的链接 */
+    }
+    a:visited {
+        color: orange; /* 已访问的链接 */
+    }
+    a:HOVER {
+        color: yellow; /* 鼠标划过链接 */
+    }
+    a:active {
+        color: green; /* 已选中的链接 */
+    }
+  </style>
+</head>
+<body>
+  <p>CSS 伪类是用来添加一些选择器的特殊效果</p>
+  <p>
+    由于状态的变化是非静态的，所以元素达到一个特定状态时，它可能得到一个伪类的样式；<br />
+    当状态改变时，它又会失去这个样式。<br />
+    由此可以看出，它的功能和 class 有些类似，但它是基于文档之外的抽象，所以叫伪类
+  </p>
+  <p style="font-weight: bold; color: red">伪类的语法</p>
+  <p style="color: blue">selector:pseudo-class {property:value;}</p>
+  <p style="font-weight: bold; color: red">CSS 类也可以使用伪类</p>
+  <p style="color: blue">
+    selector.class:pseudo-class {property:value;}
+  </p>
+  <p style="font-weight: bold">在支持 CSS 的浏览器中，链接的不同状态都可以以不同的方式显示</p>
+  <a href="#">我是链接</a>
+  <p><span style="font-weight: bold">注意：</span> 在 CSS 定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的</p>
+  <p><span style="font-weight: bold">注意：</span> 在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的</p>
+  <p>注意：伪类的名称不区分大小写</p>
+</body>
+</html>

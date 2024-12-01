@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      .father{
+          width: 620px;
+          height: 420px;
+          background: antiquewhite;
+      }
+      .one{
+          width: 200px;
+          height: 200px;
+          background: tomato;
+          float:left;
+      }
+      .two{
+          width:200px;
+          height: 200px;
+          background: cyan;
+          float:left;
+      }
+      .three{
+          width: 200px;
+          height: 200px;
+          background: purple;
+          float:right;
+      }
+      .four{
+          width: 610px;
+          height: 210px;
+          background: brown;
+          /*float:left;*/
+          /*clear:right;*/
+          /*clear:left*/
+          /*推荐使用  清楚两端浮动*/
+          clear:both;
+      }
+  </style>
+</head>
+<body>
+<div class="father">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="four"></div>
+</div>
+</body>
+</html>
